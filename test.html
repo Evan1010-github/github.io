@@ -97,14 +97,14 @@
             var email = document.getElementById("email");
             var comments = document.getElementById("comments");
 
-            var rowData = {
+            var rawData = {
                 name: name.value,
                 email: email.value,
                 comments: comments.value
             };
 
             // 上傳資料
-            google.script.run.addData(rowData);
+            google.script.run.addData(rawData);
             // 清除表單上的資料
             document.getElementById("myForm").reset();
             // 完成後的訊息
